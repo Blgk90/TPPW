@@ -1,0 +1,114 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Roboto', sans-serif;;
+}
+
+p
+{
+    font-weight: bold;
+}
+
+.feed li
+{
+    border-radius: 1.5rem;
+}
+
+.hidden
+{
+    display: none;
+}
+
+.visible
+{
+    display: block;
+}
+
+.spacer
+{
+    width:80%;
+    margin: 0 auto;
+}
+
+fieldset
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 1.5rem;
+}
+
+input
+{display: block;}
+
+.inputWrapper
+{
+    width:100%;
+    margin-bottom: 1rem;
+}
+
+.inputWrapper button
+{
+    width: 40%;
+    height: 100%;
+    max-width: 177px;
+}
+
+#mostra, #nascondi
+{
+    margin-bottom: 1rem;
+}
+
+li
+{
+    list-style-type: none;
+    position: relative;
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+.feed img
+{
+   position: absolute; 
+   top:0;
+   right:0;
+   width: 100px;
+   border-radius: 1.5rem;
+}
+
+.feed button
+{
+   margin-right: 1rem;
+}
+
+
+
+@media screen and (min-width:755px) {
+
+    .inputWrapper
+{
+    width:33%;
+    margin-bottom: 1rem;
+}
+
+.inputWrapper button
+{
+    width: 40%;
+    height: 100%;
+    
+}
+
+.feed img
+{
+   
+   width: 180px;
+}
+   
+
+}

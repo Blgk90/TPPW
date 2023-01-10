@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Rubrica</title>
+</head>
+<body>
+
+    <div class="spacer">
+        <fieldset>
+            <div class="inputWrapper">
+                <label for="nomCog">Nome e Cognome</label>
+                <input type="text" id="nomCog">
+            </div>
+            <div class="inputWrapper">
+                <label for="numTel">Numero di Telefono</label>
+                <input type="text" id="numTel">
+            </div>
+            <div class="inputWrapper">
+                <label for="email">Email</label>
+                <input type="text" id="email">
+            </div>
+            <div class="inputWrapper">
+                <label for="indrizzo">Indirizzo</label>
+                <input type="text" id="indirizzo">
+            </div>
+            <div class="inputWrapper">
+                <label for="immagine">Immagine</label>
+                <input type="text" id="immagine">
+            </div>
+            <div class="inputWrapper"><button id="aggiungi"">Aggiungi Contatto</button></div>
+        </fieldset>
+        <button id="mostra">Mostra Contatti</button>
+        <button id="nascondi" class=" hidden" >Nascondi Contatti</button>
+        <div class="feed"></div>
+    </div>
+    
+    <script src="./js/scriptbeta.js"> </script>
+</body>
+</html>
