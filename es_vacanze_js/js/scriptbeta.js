@@ -1,5 +1,4 @@
 let contatti = [];
-
 let feed = document.querySelector(".feed");
 let aggContatto = document.querySelector("#aggiungi");
 let mostraRub = document.querySelector("#mostra");
@@ -38,30 +37,24 @@ function inserisci ()
     // con queryselectorall seleziono una nodelist di oggetti input
     let nodoDati = document.querySelectorAll("input");
     let controlloRidondanza = false;
-
-    for(i=0; i<contatti.length; i++)
-    {
-        if(contatti[i].nomCog == nodoDati[0].value)
-        {
-            controlloRidondanza = true;
-        }
-    }
-
     
-
     // se uno dei campi input è vuoto allora restituisco un errore, altrimenti inserisco il contatto nell'array
     if (nodoDati[0].value =="" || nodoDati[1].value == "" || nodoDati[2].value =="" )
     {
         alert("Hai dimenticato di compilare qualche campo");
+        return
     }
-    // controlla se il pulsante modifica è stato premuto, e quindi se siamo in una fase di modifica del contatto
-    else if (controlloRidondanza == true)
+    
+    for(i=0; i<contatti.length; i++)
     {
-        alert("Il contatto è già stato inserito in precedenza");
-        controlloRidondanza = false;
-
+        if(contatti[i].nomCog == nodoDati[0].value)
+        {
+            alert("Il contatto è già stato inserito in precedenza");
+            return
+        }
     }
-    else if (modificaCont == true)
+
+    if (modificaCont == true)
     {
         // prende tutti i dati che abbiamo inserito e li mette nel record che stiamo modficando
         contatti[numRecord].nomCog = nodoDati[0].value;
